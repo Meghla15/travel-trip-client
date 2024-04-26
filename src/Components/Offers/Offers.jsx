@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import 'animate.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Offers = () => {
+    useEffect (() =>{
+        Aos.init();
+
+    })
     return (
-        <div className='container mx-auto mb-24'>
+        <div className='container mx-auto mb-24  'data-aos ="fade-down">
             <h1 className='font-bold text-3xl text-center p-1'>Offers</h1>
             <p className='font-semibold text-center mb-3 p-1'>Promotions, deals and special offers for you</p>
             <div className='flex lg:flex-row flex-col gap-6'>

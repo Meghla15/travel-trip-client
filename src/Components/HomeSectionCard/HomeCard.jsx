@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import HomeSectionCard from './HomeSectionCard';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const HomeCard = () => {
     const addedSpots = useLoaderData();
+    useEffect (() =>{
+        Aos.init();
+
+    })
    
     return (
         <div className='mb-20'>
         <h1 className="lg:text-4xl text-3xl font-bold text-center lg:mt-10 mt-6 font-neon ">Tourist Sport</h1>
 
-        <div className='container mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 lg:mt-10 mt-6  animate__animated animate__bounceInLeft' >
+        <div className='container mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 lg:mt-10 mt-6  ' data-aos ="fade-up" >
         {
                 addedSpots.map(addedSpot => <HomeSectionCard
                 key={addedSpot._id}

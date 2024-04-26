@@ -1,8 +1,15 @@
-# React + Vite
+Category -Tourism Management Website
+Website Name - Travel Trip
+Website url - 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+five bullet point - 1.Navbar
+                    2.Banner
+                    3.Tourist Sport
+                    4.Offers
+                    5.Footer
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm package name - 1. DaisyUi
+                   2.Tailwind CSS
+                   3. Animate.css
+                   4. AOS Animate 
