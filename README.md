@@ -13,3 +13,4 @@ npm package name - 1. DaisyUi
                    2.Tailwind CSS
                    3. Animate.css
                    4. AOS Animate 
+                   5. Firebase

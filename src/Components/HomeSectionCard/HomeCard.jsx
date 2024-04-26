@@ -5,6 +5,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'
 const HomeCard = () => {
     const addedSpots = useLoaderData();
+    console.log(addedSpots)
     useEffect (() =>{
         Aos.init();
 

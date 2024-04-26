@@ -5,6 +5,9 @@ import Home from "../Pages/Home";
 import AllTouristSpot from "../Pages/All Tourist Spot/AllTouristSpot";
 import AddTouristSpot from "../Pages/AddTouristSpot/AddTouristSpot";
 import MyList from "../Pages/MyList/MyList";
+import ViewDetailsPage from "../Pages/ViewDetailsPage/ViewDetailsPage";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 
 const Router = createBrowserRouter([
     {
@@ -25,6 +28,18 @@ const Router = createBrowserRouter([
             {
                 path:'/addTouristSpot',
                 element:<AddTouristSpot></AddTouristSpot>
+            },
+            {
+                path:'/login',
+                element:<Login></Login>
+            },
+            {
+                path:'/register',
+                element:<Register></Register>
+            },
+            {
+                path:'/view-details/:id',
+                element:<ViewDetailsPage></ViewDetailsPage>
             },
             {
                 path:'/myList',
