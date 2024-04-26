@@ -1,11 +1,14 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import Banner from '../Components/Banner';
+import HomeCard from '../Components/HomeSectionCard/HomeCard';
 
 const Home = () => {
-    const addedSpots = useLoaderData();
+    
     return (
         <div>
-            <h1>Location: {addedSpots.length}</h1>
+            <Banner></Banner>
+            <HomeCard></HomeCard>
+         
         </div>
     );
 };

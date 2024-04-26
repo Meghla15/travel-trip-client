@@ -38,8 +38,8 @@ const AddTouristSpot = () => {
 
 
     return (
-        <div className='border w-2/3 container mx-auto bg-gray-100 mt-14'>
-            <h1 className='text-center font-bold text-3xl'>Add Tourist Spot</h1>
+        <div className='border w-2/3 container mx-auto bg-gray-100 mt-14 mb-48'>
+            <h1 className='text-center font-bold text-3xl p-4'>Add Tourist Spot</h1>
 
 
             <section className="p-6  text-gray-900">
