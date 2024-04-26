@@ -1,18 +1,41 @@
+import { useEffect, useState } from "react";
 
 
 const ListedCard = ({addedSpot}) => {
+  console.log(addedSpot)
+  const {spotName,countryName} = addedSpot || {};
+  const [tableData, setTableData] = useState([]);
+
+  useEffect (() =>{
+    setTableData(addedSpot)
+  });
+
+    
 
     return (
-        <div className="card card-side lg:w-1/3 w-2/3 bg-base-100 shadow-xl mx-auto container flex lg:flex-row md:flex-row flex-col">
-        <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
-        <div className="card-body">
-          <h2 className="card-title"></h2>
-          <p>Click the button to watch on Jetflix app.</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Watch</button>
-          </div>
-        </div>
-      </div>
+      <div className="overflow-x-auto">
+      <table className="table">
+        {/* head */}
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* row 1 */}
+          {tableData.map((item, index) => (
+          <tr key={item.id}>
+            <td>{index + 1}</td> 
+            <td>{item.spotName},{item.countryName}</td>
+            <td></td>
+          </tr>
+        ))}
+        </tbody>
+      </table>
+    </div>
     );
 };
 
