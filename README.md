@@ -14,3 +14,4 @@ npm package name - 1. DaisyUi
                    3. Animate.css
                    4. AOS Animate 
                    5. Firebase
+                   6. React bootstrap
