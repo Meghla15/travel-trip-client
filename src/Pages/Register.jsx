@@ -59,7 +59,7 @@ const Register = () => {
           noValidate=""
           className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow bg-gray-50"
         >
-          <h2 className="w-full text-3xl text-blue-700 font-bold leading-tight text-center">
+          <h2 className="w-full font-acme text-3xl text-blue-700 font-bold leading-tight text-center">
             Please Register
           </h2>
           <div>

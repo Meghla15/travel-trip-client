@@ -16,6 +16,8 @@ const ViewDetailsPage = () => {
       console.log(singleData);
     }
   }, [addedSpots, id]);
+
+  
  
 
   const {
@@ -32,14 +34,16 @@ const ViewDetailsPage = () => {
   
 
   return (
+    
+  
     <div className="hero min-h-screen container mx-auto rounded-2xl bg-base-200 mb-40">
       <div className="hero-content flex-col lg:flex-row">
         <img src={photo} className="w-[50%] rounded-lg shadow-2xl" />
         <div className="">
-          <h1 className="text-2xl font-neon font-semibold mb-2">
-            Spot Name :<span className="font-extrabold font-neon ">{spotName}</span>
+          <h1 className="text-2xl font-acme font-semibold mb-2">
+            Spot Name : <span className="font-extrabold font-neon ">{spotName}</span>
           </h1>
-          <h1 className="text-2xl font-neon font-bold">
+          <h1 className="text-2xl font-acme font-semibold mb-1">
             Country Name :<span className="font-extrabold font-neon ">{countryName}</span>
           </h1>
 
@@ -59,18 +63,18 @@ const ViewDetailsPage = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-              <p className="font-semibold text-neon">
+              <p className="font-semibold text-acme mb-1">
                 <span className="font-semibold">Location: </span>
                 {location}
               </p>
             </div>
           </div>
 
-          <div className="flex justify-between">
-            <p className="font-bold">Total Visiter: {totalVisiter} </p>
-            <p className="font-bold">Seasonality: {seasonality} </p>
+          <div className="flex gap-8">
+            <p className="font-semibold">Total Visiter: <span className="font-bold">{totalVisiter}</span> </p>
+            <p className="font-semibold">Seasonality: <span className="font-semibold">{seasonality}</span>   </p>
           </div>
-          <p className="font-bold">Travel Time: {travelTime} </p>
+          <p className="font-semibold">Travel Time: <span className="text-red-700 font-extrabold">{travelTime}</span> Days </p>
 
           <p className="font-semibold font-neon text-2xl mt-3">
             Price :
@@ -96,6 +100,7 @@ const ViewDetailsPage = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

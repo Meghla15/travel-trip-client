@@ -34,7 +34,7 @@ const Login = () => {
         
 			
 			<form  onSubmit={handleSubmit(onSubmit)} noValidate="" action="" className="self-stretch space-y-3">
-				<h1 className='text-3xl font-extrabold font-neon mb-6'>Please Login Here</h1>
+				<h1 className='text-3xl font-bold font-acme mb-6'>Please Login Here</h1>
 				<div>
 				<label htmlFor="name" className="block mb-1 ml-1 text-start"> Name</label>
 					<input id="name" type="text" placeholder="Your name" className="w-full p-3 rounded-md focus:ring focus:dark:ring-violet-600 dark:border-gray-300" />
@@ -65,8 +65,8 @@ const Login = () => {
             
 		</div>
 		<div className='col-span-3 mt-14 animate__animated animate__bounceInRight'>
-             <h1 className="text-4xl  font-extrabold dark:text-gray-900">Build Connection With Us</h1>
-             <p className='font-neon mt-10 w-2/3 mx-auto text-center text-gray-600'>We value the opportunity to connect with our community of homeowners, renters, and property enthusiasts. Whether you have questions about a specific property, need assistance navigating our platform, or simply want to share feedback, we're here to listen and assist you. Connect with us through our various channels whether it's through email, phone, or social media and let's start a conversation. Your input is invaluable to us as we continually strive to improve and enhance your experience with Your BeHome. We look forward to hearing from you and building a lasting connection together</p>
+             <h1 className="text-4xl  font-bold font-sans dark:text-gray-900">Build Connection With Us</h1>
+             <p className='font-neon mt-10 w-2/3 mx-auto text-center text-gray-600'>Welcome to our travel community! We believe that the best journeys are those shared with others. By building connections with us, you're joining a network of fellow explorers, each with a unique story to tell. We invite you to share your experiences, seek advice, and find inspiration for your next adventure. Whether you're a seasoned traveler or embarking on your first trip, our community is here to support you. Join us to discover new destinations, make lasting friendships, and create unforgettable memories. Let's explore the world together!</p>
              </div>
 	</div>
 </section>

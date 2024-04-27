@@ -9,6 +9,7 @@ import ViewDetailsPage from "../Pages/ViewDetailsPage/ViewDetailsPage";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivetRoute from "../Components/PrivetRoute/PrivetRoute";
+import UpdatePage from "../Pages/UpdatePage/UpdatePage";
 
 const Router = createBrowserRouter([
     {
@@ -41,13 +42,18 @@ const Router = createBrowserRouter([
             },
             {
                 path:'/view-details/:id',
-                element:<ViewDetailsPage></ViewDetailsPage>,
+                element:<PrivetRoute><ViewDetailsPage></ViewDetailsPage></PrivetRoute>,
                 loader:() => fetch('http://localhost:5000/AddedSpot')
             },
             {
                 path:'/myList',
                 element:<PrivetRoute><MyList></MyList></PrivetRoute>,
                 loader:() => fetch('http://localhost:5000/AddedSpot')
+            },
+            {
+                path:'/update/:id',
+                element:<PrivetRoute><UpdatePage></UpdatePage></PrivetRoute>,
+                
             },
 
         ]

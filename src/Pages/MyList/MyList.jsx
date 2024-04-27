@@ -7,9 +7,8 @@ const MyList = () => {
     
     return (
         <div>
-           <h1>this is my list and this is also a privet route</h1> 
-           <h1>Location: {addedSpots?.length}</h1>
-           <div>
+          
+           <div className="mt-14 mb-24">
            {
             addedSpots?.map(addedSpot => <ListedCard
                  key={addedSpot._id}

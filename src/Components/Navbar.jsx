@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
         <a className="btn btn-ghost text-2xl font-bold text-blue-700">
           
-         Tourist Trip
+         Travel Trip
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
