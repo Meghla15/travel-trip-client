@@ -8,6 +8,7 @@ import MyList from "../Pages/MyList/MyList";
 import ViewDetailsPage from "../Pages/ViewDetailsPage/ViewDetailsPage";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import PrivetRoute from "../Components/PrivetRoute/PrivetRoute";
 
 const Router = createBrowserRouter([
     {
@@ -27,7 +28,7 @@ const Router = createBrowserRouter([
             },
             {
                 path:'/addTouristSpot',
-                element:<AddTouristSpot></AddTouristSpot>
+                element:<PrivetRoute><AddTouristSpot></AddTouristSpot></PrivetRoute>,
             },
             {
                 path:'/login',
@@ -39,11 +40,12 @@ const Router = createBrowserRouter([
             },
             {
                 path:'/view-details/:id',
-                element:<ViewDetailsPage></ViewDetailsPage>
+                element:<ViewDetailsPage></ViewDetailsPage>,
+                loader:() => fetch('http://localhost:5000/AddedSpot')
             },
             {
                 path:'/myList',
-                element:<MyList></MyList>,
+                element:<PrivetRoute><MyList></MyList></PrivetRoute>,
                 loader:() => fetch('http://localhost:5000/AddedSpot')
             },
 
