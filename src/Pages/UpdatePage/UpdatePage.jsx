@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import {  toast } from 'react-toastify';
 import { useParams } from 'react-router-dom';
 
 const UpdatePage = () => {
     const {id}  = useParams();
-    console.log(id)
-    const [update, setUpdate] = useState({});
+    // console.log(id)
+    
 
     const handleUpdate =event =>{
         event.preventDefault() 
@@ -19,20 +19,28 @@ const UpdatePage = () => {
         const totalVisiter = form.totalVisiter.value;
         const seasonality = form.seasonality.value;
 
-        const updateData ={photo,spotName,countryName,location,description,travelTime,averageCost,totalVisiter,seasonality}
-        console.log(updateData)
+        const updateData ={photo,spotName,countryName,location,description,travelTime,averageCost,totalVisiter,seasonality} || {}
+        // console.log(updateData)
 
+		fetch(`http://localhost:5000/updatePage/${id}`,{
+			method : "PUT",
+			headers:{
+				'content-type':'application/json'},
+				 body : JSON.stringify(updateData)
+		})
+         .then (res => res.json())
+		 .then(data =>{
+			toast.success("Data Update Successfully")
+			console.log(data)
+		 })
+		
     }
+	
 
 
-    useEffect(() =>{
-     fetch(`http://localhost:5000/updatePage/${id}`)
-     .then(res =>res.json())
-     .then (data =>{
-        setUpdate(data)
-      console.log(data)
-     })
-  },[id])
+
+
+   
     return (
         <div className='border w-2/3 container mx-auto bg-gray-100 mt-14 mb-48'>
             <h1 className='text-center font-bold text-3xl p-4'>Update Tourist Spot</h1>

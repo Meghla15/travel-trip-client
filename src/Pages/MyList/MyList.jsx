@@ -9,11 +9,8 @@ const MyList = () => {
         <div>
           
            <div className="mt-14 mb-24">
-           {
-            addedSpots?.map(addedSpot => <ListedCard
-                 key={addedSpot._id}
-            addedSpot ={addedSpot}></ListedCard>)
-           }
+          
+           <ListedCard></ListedCard>
            </div>
            
         </div>
