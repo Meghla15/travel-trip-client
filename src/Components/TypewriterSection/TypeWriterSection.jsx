@@ -7,7 +7,7 @@ const TypeWriterSection = () => {
     // console.log(text)
     return (
         <div className='mx-auto container mb-36'>
-           <div className="card card-side w-2/3 mx-auto bg-base-200 shadow-xl">
+           <div className="card card-side flex lg:flex-row flex-col w-2/3 mx-auto bg-base-200 shadow-xl">
   <figure><img className="" src="https://img.pikbest.com/png-images/simple-cartoon-line-painting-online-shopping-discount-discount-icon_6094890.png!sw800" alt="Movie"/></figure>
   <div className="card-body ">
     <h2 className="card-title text-2xl font-bold font-acme ">Get instant discounts</h2>
