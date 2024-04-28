@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import UseAuth from "../../Hooks/UseAuth";
 import { Link } from "react-router-dom";
+import {  toast } from 'react-toastify';
 
 
 const ListedCard = () => {
   const {user} =UseAuth() || {};
   const [item, setItem] = useState([]);
+  const [control, setControl] = useState(false);
   // console.log(user)
   
     useEffect(()=>{
@@ -14,9 +16,23 @@ const ListedCard = () => {
       .then (data =>{
         setItem(data);
       });
-    },[user]);
+    },[user,control]);
     // console.log(user)
+   
+    const handleDelete = (id) =>{
+      fetch(`http://localhost:5000/delete/${id}`,{
+        method:"DELETE",
 
+      })
+      .then(res => res.json())
+      .then (data =>{
+        if (data.deletedCount > 0) {
+          setControl (!control)
+			toast.error("Delete Successfully")
+
+        }
+      })
+    }
     
 
     return (
@@ -47,7 +63,7 @@ const ListedCard = () => {
       <td>{p.travelTime} Days</td>
       <td>{p.averageCost} Taka</td>
       <td><Link to={`/update/${p._id}`}><button className="btn btn-accent">Update</button></Link></td>
-      <td><button className="btn btn-error">Delete</button></td>
+      <td><button onClick={()=>handleDelete(p._id)} className="btn btn-error">Delete</button></td>
     </tr>
   </tbody>
 </table>
