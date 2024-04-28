@@ -45,7 +45,7 @@ const ListedCard = () => {
   {/* head */}
   <thead>
     <tr>
-      <th>No.</th>
+      
       <th>Spot Name</th>
       <th>Location</th>
       <th>Travel Time</th>
@@ -57,7 +57,7 @@ const ListedCard = () => {
   <tbody>
     {/* row 1 */}
     <tr>
-      <th>{p.index}</th>
+      
       <td>{p.spotName}</td>
       <td>{p.location}</td>
       <td>{p.travelTime} Days</td>
