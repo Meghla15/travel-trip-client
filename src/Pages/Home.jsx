@@ -5,6 +5,7 @@ import HomeCard from '../Components/HomeSectionCard/HomeCard';
 import Offers from '../Components/Offers/Offers';
 import TrendingDestination from '../Components/TrendingDestination/TrendingDestination';
 import { useEffect } from 'react';
+import TypeWriterSection from '../Components/TypewriterSection/TypeWriterSection';
 
 
 
@@ -20,6 +21,7 @@ const Home = () => {
             <HomeCard></HomeCard>
             <TrendingDestination></TrendingDestination>
             <Offers></Offers>
+            <TypeWriterSection></TypeWriterSection>
             
          
         </div>

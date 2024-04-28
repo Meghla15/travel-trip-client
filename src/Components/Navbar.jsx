@@ -47,7 +47,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost text-2xl font-bold text-blue-700">
-          
+          <img className='w-10 h-10' src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="" />
          Travel Trip
         </a>
       </div>

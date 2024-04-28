@@ -11,10 +11,11 @@ const TrendingDestination = () => {
     return (
         <div className='mb-20 container mx-auto' data-aos ="fade-right">
             <h1 className='text-center font-acme text-3xl font-bold'>Trending Destination</h1>
+            <p className='text-center w-2/3 mx-auto text-xl font-semibold'>Most popular choices for travellers from the World !!</p>
 
             <div className='flex lg:flex-row flex-col mt-10 justify-around px-20 gap-3'>
              
-              <img className='w-[550px] h-[300px] rounded-2xl ' src="https://lh3.googleusercontent.com/proxy/EhoJ3B0j9nIqIQO4BkEdU7gvRJScotm9V36Pna1HuMoL_9wgwkFZ2bz1NblxRrJvOb-pKuHepaQZXxyFciLBLeD4Mx35CGpk6EqCt8YA9hqTp2Vz_DZkoVu4jiZb5bLHd6lNfjwqCvETUv3Ki88R1z1rYodO9OoGaEwgCs6ROTVnTMTzvnDXg86T" alt="" />
+              <img className='w-[550px] h-[300px] rounded-2xl ' src="https://av-website-production.s3.ap-southeast-1.amazonaws.com/Global/Location/SajekValley/a3727c4d29334ff58efba1b4ebbdb4da_28487665806_7d888e88bb_k.jpg" alt="" />
               
             
                <img className='w-[550px] h-[300px] rounded-2xl' src="https://img.veenaworld.com/wp-content/uploads/2023/09/Best-Time-to-Visit-Phuket-A-Comprehensive-Guide.jpg" alt="" />
