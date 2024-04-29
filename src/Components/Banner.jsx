@@ -1,16 +1,23 @@
-
+import { useTypewriter } from 'react-simple-typewriter'
 
 const Banner = () => {
+   
+  const [text] = useTypewriter({
+    words: ['Homes', 'Trending Destination', 'Apartment', 'Best Offers', 'Cottages'],
+    loop: 0
+  })
+
     return (
        <div className="container mx-auto ">
          <div className="carousel w-full h-[450px] rounded-2xl">
         <div id="slide1" className="carousel-item relative w-full">
-        <img src="https://media2.thrillophilia.com/images/photos/000/041/109/original/1584271952_shutterstock_749994316.jpg?gravity=center&width=1280&height=642&crop=fill&quality=auto&fetch_format=auto&flags=strip_profile&format=jpg&sign_url=true" className="w-full" />
-        <h1 className="lg:text-4xl text-2xl text-black absolute top-[30%] lg:left-[32%] md:left-[30%] left-[15%] mx-auto  opacity-70 p-4 rounded-3xl font-bold  font-neon text-center animate__animated animate__fadeInLeft">
+        <img src="https://c4.wallpaperflare.com/wallpaper/12/209/303/best-destinations-in-the-world-wallpaper-preview.jpg" className="w-full" />
+        <h1 className="lg:text-5xl md:text-3xl text-2xl text-fuchsia-700 absolute top-[25%] lg:left-[30%] md:left-[28%] left-[15%] mx-auto  opacity-70 p-4 rounded-3xl font-bold  font-acme text-center animate__animated animate__fadeInLeft">
          
-         Welcome to Travel Trip !! <br />
-         You Can Explore Our Site 
+         Welcome to Travel Trip !! 
+        
        </h1>
+       <h1  className="lg:text-4xl text-2xl  absolute top-[40%] lg:left-[28%] md:left-[26%] left-[12%] mx-auto  opacity-70 p-4 rounded-3xl font-bold text-slate-800  font-neon text-center animate__animated animate__fadeInLeft">Find <span className='text-rose-800 font-bold font-acme'>{text}</span> for your next trip</h1>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" className="btn btn-circle">❮</a> 
             <a href="#slide2" className="btn btn-circle">❯</a>
@@ -41,7 +48,7 @@ const Banner = () => {
           </div>
         </div> 
         <div id="slide4" className="carousel-item relative w-full">
-          <img src="https://c4.wallpaperflare.com/wallpaper/12/209/303/best-destinations-in-the-world-wallpaper-preview.jpg" className="w-full" />
+          <img src=" https://media2.thrillophilia.com/images/photos/000/041/109/original/1584271952_shutterstock_749994316.jpg?gravity=center&width=1280&height=642&crop=fill&quality=auto&fetch_format=auto&flags=strip_profile&format=jpg&sign_url=true" className="w-full" />
           <h1 className="lg:text-4xl text-2xl text-white absolute top-[30%] lg:left-[32%] md:left-[30%] left-[15%] mx-auto  opacity-70 p-4 rounded-3xl font-bold  font-neon text-center animate__animated animate__fadeInLeft">
          
          Welcome to Travel Trip !! <br />

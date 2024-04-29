@@ -1,6 +1,8 @@
 import {  toast } from 'react-toastify';
+
 const AddTouristSpot = () => {
     const handleAddSpot = event =>{
+		
         event.preventDefault()
          
         const form = event.target;

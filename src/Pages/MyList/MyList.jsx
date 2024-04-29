@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import ListedCard from "../../Components/ListedCard/ListedCard";
 
 const MyList = () => {
+    
     const addedSpots = useLoaderData()
     console.log(addedSpots)
     

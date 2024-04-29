@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { Link, useParams } from "react-router-dom";
 
+
 const ViewDetailsPage = () => {
+ 
   const [singleData, setSingleData] = useState({});
   const { id } = useParams();
   const addedSpots = useLoaderData();

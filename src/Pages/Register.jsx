@@ -5,8 +5,9 @@ import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
+
 const Register = () => {
-    
+ 
     const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [showPassword, setShowPassword] = useState(false);

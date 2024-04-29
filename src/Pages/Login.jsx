@@ -5,7 +5,9 @@ import { useForm } from 'react-hook-form';
 import {  toast } from 'react-toastify';
 import SocialLogin from '../Components/SocialLogin/SocialLogin';
 
+
 const Login = () => {
+	
     const {signInUser} =UseAuth();
 	const navigate = useNavigate();
 	const from = "/";

@@ -1,7 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 import AllTouristSpotCard from "./AllTouristSpotCard/AllTouristSpotCard";
 
+
 const AllTouristSpot = () => {
+ 
   const addedSpots = useLoaderData();
 //   console.log(addedSpots);
   return (
@@ -41,7 +43,7 @@ const AllTouristSpot = () => {
       </div>
     
       <div
-        className="container mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 lg:mt-10 mt-6  "
+        className="container px-5 md:px-0 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 lg:mt-10 mt-6  "
         data-aos="fade-up"
       >
         {addedSpots?.map((addedSpot) => (
