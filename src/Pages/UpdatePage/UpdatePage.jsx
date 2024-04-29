@@ -22,7 +22,7 @@ const UpdatePage = () => {
         const updateData ={photo,spotName,countryName,location,description,travelTime,averageCost,totalVisiter,seasonality} || {}
         // console.log(updateData)
 
-		fetch(`http://localhost:5000/updatePage/${id}`,{
+		fetch(`https://travel-tour-server-ebon.vercel.app/updatePage/${id}`,{
 			method : "PUT",
 			headers:{
 				'content-type':'application/json'},

@@ -20,7 +20,7 @@ const AddTouristSpot = () => {
         console.log(newAddedSpot)
          
 
-        fetch('http://localhost:5000/AddedSpot', {
+        fetch('https://travel-tour-server-ebon.vercel.app/AddedSpot', {
             method:"POST",
             headers:{
              'content-type':'application/json'

@@ -20,13 +20,13 @@ const Router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader:() => fetch('http://localhost:5000/AddedSpot')
+                loader:() => fetch('https://travel-tour-server-ebon.vercel.app/AddedSpot')
             },
             
             {
                 path:'/allTouristSpot',
                 element:<AllTouristSpot></AllTouristSpot>,
-                loader:() => fetch('http://localhost:5000/AddedSpot')
+                loader:() => fetch('https://travel-tour-server-ebon.vercel.app/AddedSpot')
             },
             {
                 path:'/addTouristSpot',
@@ -43,12 +43,12 @@ const Router = createBrowserRouter([
             {
                 path:'/view-details/:id',
                 element:<PrivetRoute><ViewDetailsPage></ViewDetailsPage></PrivetRoute>,
-                loader:() => fetch('http://localhost:5000/AddedSpot')
+                loader:() => fetch('https://travel-tour-server-ebon.vercel.app/AddedSpot')
             },
             {
                 path:'/myList',
                 element:<PrivetRoute><MyList></MyList></PrivetRoute>,
-                loader:() => fetch('http://localhost:5000/AddedSpot')
+                loader:() => fetch('https://travel-tour-server-ebon.vercel.app/AddedSpot')
             },
             {
                 path:'/update/:id',

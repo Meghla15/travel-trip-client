@@ -12,7 +12,7 @@ const ListedCard = () => {
   // console.log(user)
   
     useEffect(()=>{
-      fetch (`http://localhost:5000/listedItem/${user?.email}`)
+      fetch (`https://travel-tour-server-ebon.vercel.app/listedItem/${user?.email}`)
       .then (res => res.json())
       .then (data =>{
         setItem(data);
@@ -33,7 +33,7 @@ const ListedCard = () => {
         if (result.isConfirmed) {
           
             
-          fetch(`http://localhost:5000/delete/${id}`,{
+          fetch(`https://travel-tour-server-ebon.vercel.app/delete/${id}`,{
         method:"DELETE",
 
       })
