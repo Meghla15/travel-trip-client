@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const HomeSectionCard = ({addedSpot}) => {
     const {_id,photo, spotName, countryName,location} = addedSpot || {}
-    console.log(addedSpot)
+    // console.log(addedSpot)
     return (
       <Link to={`/view-details/${_id}`}>
         <div className="card w-96 bg-base-100 shadow-xl">

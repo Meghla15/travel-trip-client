@@ -1,5 +1,5 @@
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
-import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth/cordova";
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import {  createContext, useEffect, useState } from "react";
 import auth from "./FireBase.Config";
 
@@ -13,7 +13,7 @@ const githubProvider = new GithubAuthProvider();
 
 const FirebaseProvider = ({children}) =>{
     const [ user, setUser] = useState(null);
-    console.log(user);
+   //  console.log(user);
     const [loading, setLoading] =useState(true);
 
 
