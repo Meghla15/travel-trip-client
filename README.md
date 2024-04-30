@@ -1,6 +1,6 @@
 Category -Tourism Management Website
 Website Name - Travel Trip
-Website url - https://melodic-biscochitos-8ce2a4.netlify.app/
+Website url - https://fastidious-valkyrie-f175d5.netlify.app/
 
 five bullet point - 1.Navbar
                     2.Banner
@@ -10,7 +10,7 @@ five bullet point - 1.Navbar
 
 
 npm package name - 1. DaisyUi
-                   2.Tailwind CSS
+                   2. Tailwind CSS
                    3. Animate.css
                    4. AOS Animate 
                    5. Firebase
